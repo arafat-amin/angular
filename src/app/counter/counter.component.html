@@ -1,0 +1,16 @@
+
+<form action="" class="py-5">
+  <div class="container text-center">
+    <h2 class="text-uppercase">Counter: {{ count }} </h2>
+    <div class="form-group mt-4">
+      <button type="button" class="btn btn-dark px-3 mr-5" (click)="decrement()">-</button>
+      <button type="button" class="btn btn-dark" (click)="increment()">+</button>
+      <br>
+      <input type="text" name="inputValue"
+      placeholder="Enter a Value" class="form-control mt-3 w-50 mx-auto">
+      <br>
+      <button type="button" class="btn btn-dark" (click)="reset()">Reset Value</button>
+      <span></span>
+    </div>
+  </div>
+</form>
