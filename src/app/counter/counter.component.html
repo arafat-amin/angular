@@ -1,16 +1,25 @@
 
-<form action="" class="py-5">
+<form class="py-5" [formGroup]="counterForm" (ngSubmit)="onSubmit()">
   <div class="container text-center">
-    <h2 class="text-uppercase">Counter: {{ count }} </h2>
+    <h2 class="text-uppercase">Count by 1: {{ count }} </h2>
     <div class="form-group mt-4">
       <button type="button" class="btn btn-dark px-3 mr-5" (click)="decrement()">-</button>
       <button type="button" class="btn btn-dark" (click)="increment()">+</button>
       <br>
-      <input type="text" name="inputValue"
-      placeholder="Enter a Value" class="form-control mt-3 w-50 mx-auto">
-      <br>
+      <input type="text"
+       name="inputValue"
+       formControlName="arbitraryValue"
+       class="form-control mt-3 w-50 mx-auto"
+       #valueChanged>
+       <!-- <p>{{valueChanged.value}}</p> -->
+       <!-- <span *ngIf="counterForm.get('arbitraryValue')?.valid
+       && counterForm.get('arbitraryValue')?.touched">Please Enter a value</span> -->
+       <br><br>
+       <h3 class="text-uppercase">Count By a Value {{ countArbitraryValue }}</h3>
+      <button type="button" class="btn btn-dark px-3 mr-5" (click)="decrementArbitraryValue()">-</button>
+      <button type="button" class="btn btn-dark" (click)="increaseArbitraryValue()">+</button>
+      <br><br>
       <button type="button" class="btn btn-dark" (click)="reset()">Reset Value</button>
-      <span></span>
     </div>
   </div>
 </form>
