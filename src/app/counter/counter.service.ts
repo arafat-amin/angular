@@ -35,4 +35,8 @@ export class CounterService {
   reset() {
     return this.counter = 0
   }
+
+  resetByValue() {
+    return this.counterByValue = 0
+  }
 }

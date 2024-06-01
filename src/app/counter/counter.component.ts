@@ -20,9 +20,10 @@ export class CounterComponent implements OnInit{
   ngOnInit() {
     // this.incrementBtn = this.counterService.increment();
     this.count = this.counterService.getCount();
+    this.countArbitraryValue = this.counterService.getCountBy();
 
     this.counterForm = new FormGroup ({
-      'arbitraryValue': new FormControl(''),
+      'arbitraryValue': new FormControl(),
     });
 
   }
@@ -60,5 +61,9 @@ export class CounterComponent implements OnInit{
   reset() {
     this.counterService.reset();
     this.count = this.counterService.getCount();
+    this.counterService.resetByValue();
+    this.countArbitraryValue = this.counterService.getCountBy();
+    const ResetValue = this.counterForm.get('arbitraryValue')!.reset();
+    return ResetValue;
   }
 }
