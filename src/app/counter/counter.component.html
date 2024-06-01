@@ -6,15 +6,16 @@
       <button type="button" class="btn btn-dark px-3 mr-5" (click)="decrement()">-</button>
       <button type="button" class="btn btn-dark" (click)="increment()">+</button>
       <br>
-      <input type="text"
+      <input type="number"
        name="inputValue"
        formControlName="arbitraryValue"
-       class="form-control mt-3 w-50 mx-auto"
-       #valueChanged>
-       <!-- <p>{{valueChanged.value}}</p> -->
-       <!-- <span *ngIf="counterForm.get('arbitraryValue')?.valid
-       && counterForm.get('arbitraryValue')?.touched">Please Enter a value</span> -->
-       <br><br>
+       class="form-control mt-3 w-50 mx-auto">
+       <br>
+       <!-- Validator of a valid value -->
+        <span class="d-block text-danger mb-3"
+        *ngIf="!counterForm.get('arbitraryValue')?.valid || (errorMs && counterForm.get('arbitraryValue')?.value === 0)"
+        >Please Enter a valid value</span>
+
        <h3 class="text-uppercase mb-3">Count By a Value {{ countArbitraryValue }}</h3>
       <button type="button" class="btn btn-dark px-3 mr-5" (click)="decrementArbitraryValue()">-</button>
       <button type="button" class="btn btn-dark" (click)="increaseArbitraryValue()">+</button>

@@ -1,19 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { CounterService } from './counter.service';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-counter',
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css']
 })
-export class CounterComponent implements OnInit{
+export class CounterComponent implements OnInit {
 
   counterForm!: FormGroup;
 
   count: number = 0;
 
   countArbitraryValue: number = 0;
+
+  errorMs: boolean = false;
 
   constructor(private counterService: CounterService) { }
 
@@ -22,8 +24,8 @@ export class CounterComponent implements OnInit{
     this.count = this.counterService.getCount();
     this.countArbitraryValue = this.counterService.getCountBy();
 
-    this.counterForm = new FormGroup ({
-      'arbitraryValue': new FormControl(),
+    this.counterForm = new FormGroup({
+      'arbitraryValue': new FormControl(0, Validators.min(0)),
     });
 
   }
@@ -34,9 +36,13 @@ export class CounterComponent implements OnInit{
 
   increaseArbitraryValue() {
     const value = this.counterForm.get('arbitraryValue')?.value;
-    if(value) {
+    if (value && value > 0) {
       this.counterService.increaseBy(+value);
       this.countArbitraryValue = this.counterService.getCountBy();
+      this.errorMs = false;
+    } else {
+      this.errorMs = true;
+
     }
   }
 
@@ -46,7 +52,11 @@ export class CounterComponent implements OnInit{
       this.counterService.decreaseBy(+value); // Convert value to number
       this.countArbitraryValue = this.counterService.getCountBy();
     }
+
+    if(this.countArbitraryValue < 0){
+      this.countArbitraryValue = this.counterService.resetByValue();
     }
+  }
 
   increment() {
     this.counterService.increment();
@@ -56,6 +66,9 @@ export class CounterComponent implements OnInit{
   decrement() {
     this.counterService.decrement();
     this.count = this.counterService.getCount();
+    if(this.count < 0){
+      this.count = this.counterService.reset();
+    }
   }
 
   reset() {
