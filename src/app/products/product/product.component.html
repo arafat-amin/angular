@@ -1,0 +1,37 @@
+<div class="container py-5">
+  <div *ngIf="product">
+    <h1 class="text-danger">{{ product.title }}</h1>
+    <div class="product__img" *ngFor="let image of product.images">
+      <figure>
+        <img [src]="image" alt="{{ product.title }}" class="product-detail-image" />
+      </figure>
+    </div>
+    <span class="d-block"><strong>Price:</strong> ${{ product.price }} </span>
+    <span class="d-block"><strong>Availability:</strong> {{ product.availabilityStatus }}</span>
+    <span class="d-block"><strong>Category:</strong> {{ product.category }}</span>
+    <p><strong>Description:</strong> {{ product.description }}</p>
+
+
+    <div *ngIf="product.reviews">
+      <h2 class="mt-4 text-danger">Reviews</h2>
+      <ul *ngFor="let review of product.reviews">
+        <li class="mb-3">
+          <span class="d-block"><strong class="ms-2">Name</strong> {{review.reviewerName}}</span>
+          <span class="d-block"><strong class="ms-2">Email</strong> {{review.reviewerEmail}}</span>
+          <span class="d-block"><strong class="ms-2">Comment</strong> {{review.comment}}</span>
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="!product.reviews">
+      There is no reviews yet, <button class="btn btn-success" type="button">Leave Review</button>
+    </div>
+  </div>
+
+
+
+  <div *ngIf="!product">
+    <p>Loading product details...</p>
+  </div>
+
+</div>

@@ -39,10 +39,9 @@ export class CounterComponent implements OnInit {
     if (value && value > 0) {
       this.counterService.increaseBy(+value);
       this.countArbitraryValue = this.counterService.getCountBy();
-      this.errorMs = false;
+
     } else {
       this.errorMs = true;
-
     }
   }
 
@@ -53,7 +52,7 @@ export class CounterComponent implements OnInit {
       this.countArbitraryValue = this.counterService.getCountBy();
     }
 
-    if(this.countArbitraryValue < 0){
+    if (this.countArbitraryValue < 0) {
       this.countArbitraryValue = this.counterService.resetByValue();
     }
   }
@@ -66,7 +65,7 @@ export class CounterComponent implements OnInit {
   decrement() {
     this.counterService.decrement();
     this.count = this.counterService.getCount();
-    if(this.count < 0){
+    if (this.count < 0) {
       this.count = this.counterService.reset();
     }
   }
