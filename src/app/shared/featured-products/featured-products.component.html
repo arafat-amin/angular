@@ -1,0 +1,16 @@
+<div class="three-column-carousel owl-carousel owl-theme">
+  <div *ngFor="let product of data | slice: 0 : displayCount ; let i = index" class="team-block-one item">
+    <div class="inner-box">
+      <figure class="image-box">
+        <a (click)="productDetails(product.id)">
+          <img [src]="product.thumbnail" alt="{{product.title}}">
+        </a>
+      </figure>
+      <div class="lower-content">
+        <h4><a (click)="productDetails(product.id)">{{product.title}}</a></h4>
+        <span class="designation">{{product.price}}</span>
+        <a (click)="productDetails(product.id)">Read More<i class="fas fa-arrow-right ml-2 align-middle"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

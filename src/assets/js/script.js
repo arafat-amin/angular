@@ -1,14 +1,14 @@
 (function($) {
-	
+
 	"use strict";
-	
+
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
 		if($('.preloader').length){
 			$('.preloader').delay(200).fadeOut(500);
 		}
 	}
-	
+
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
 		if($('.main-header').length){
@@ -24,14 +24,14 @@
 			}
 		}
 	}
-	
+
 	headerStyle();
 
 
 	// dropdown menu
 	var mobileWidth = 992;
 	var navcollapse = $('.navigation li.dropdown');
-	 
+
 	$(window).on('resize', function(){
 	    navcollapse.children('ul').hide();
 	});
@@ -40,18 +40,18 @@
 	if($(window).innerWidth() >= mobileWidth){
 	      $(this).children('ul').stop(true, false, true).slideToggle(0);
 	    }
-	});	
+	});
 
 
 	//Submenu Dropdown Toggle
 	if($('.main-header li.dropdown ul').length){
 		$('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
-		
+
 		//Dropdown Button
 		$('.main-header li.dropdown .dropdown-btn').on('click', function() {
 			$(this).prev('ul').slideToggle(500);
 		});
-		
+
 		//Disable dropdown parent link
 		$('.main-header .navigation li.dropdown > a,.hidden-bar .side-menu li.dropdown > a').on('click', function(e) {
 			e.preventDefault();
@@ -61,7 +61,7 @@
 
 	//Mobile Navigation
 	if($('.mobile-menu').length){
-		
+
 		$('.mobile-menu .menu-box').mCustomScrollbar();
 		$('.info-sidebar .xs-sidebar-widget').mCustomScrollbar();
 
@@ -75,7 +75,7 @@
 		   $('html, body').animate({
 			   scrollTop: $(target).offset().top
 			 }, 1000);
-	
+
 		});
 	}
 
@@ -114,11 +114,11 @@
 	//Fact Counter + Text Count
 	if($('.count-box').length){
 		$('.count-box').appear(function(){
-	
+
 			var $t = $(this),
 				n = $t.find(".count-text").attr("data-stop"),
 				r = parseInt($t.find(".count-text").attr("data-speed"), 10);
-				
+
 			if (!$t.hasClass("counted")) {
 				$t.addClass("counted");
 				$({
@@ -136,7 +136,7 @@
 					}
 				});
 			}
-			
+
 		},{accY: 0});
 	}
 
@@ -174,13 +174,13 @@
 				},
 				800:{
 					items:1
-				},			
+				},
 				1200:{
 					items:1
 				}
 
 			}
-		});    		
+		});
 	}
 
 
@@ -210,7 +210,7 @@
 					items:3
 				}
 			}
-		});    		
+		});
 	}
 
 	// Four Item Carousel
@@ -240,7 +240,7 @@
 					items:4
 				}
 			}
-		});    		
+		});
 	}
 
 
@@ -271,7 +271,7 @@
 					items:4
 				}
 			}
-		});    		
+		});
 	}
 
 
@@ -298,7 +298,7 @@
 					items:1
 				}
 			}
-		});    		
+		});
 	}
 
 
@@ -325,7 +325,7 @@
 					items:1
 				}
 			}
-		});    		
+		});
 	}
 
 	//two-column-carousel
@@ -354,7 +354,7 @@
 					items:2
 				}
 			}
-		});    		
+		});
 	}
 
 
@@ -378,7 +378,7 @@
 					items:1
 				}
 			}
-		});    		
+		});
 	}
 
 
@@ -387,7 +387,7 @@
 		$('.tabs-box .tab-buttons .tab-btn').on('click', function(e) {
 			e.preventDefault();
 			var target = $($(this).attr('data-tab'));
-			
+
 			if ($(target).is(':visible')){
 				return false;
 			}else{
@@ -407,7 +407,7 @@
 		$('.project-tab .product-tab-btns .p-tab-btn').on('click', function(e) {
 			e.preventDefault();
 			var target = $($(this).attr('data-tab'));
-			
+
 			if ($(target).hasClass('actve-tab')){
 				return false;
 			}else{
@@ -446,7 +446,7 @@
 					items:4
 				}
 			}
-		});    		
+		});
 	}
 
 
@@ -454,14 +454,14 @@
 	//Accordion Box
 	if($('.accordion-box').length){
 		$(".accordion-box").on('click', '.acc-btn', function() {
-			
+
 			var outerBox = $(this).parents('.accordion-box');
 			var target = $(this).parents('.accordion');
-			
+
 			if($(this).hasClass('active')!==true){
 				$(outerBox).find('.accordion .acc-btn').removeClass('active');
 			}
-			
+
 			if ($(this).next('.acc-content').is(':visible')){
 				return false;
 			}else{
@@ -469,9 +469,9 @@
 				$(outerBox).children('.accordion').removeClass('active-block');
 				$(outerBox).find('.accordion').children('.acc-content').slideUp(300);
 				target.addClass('active-block');
-				$(this).next('.acc-content').slideDown(300);	
+				$(this).next('.acc-content').slideDown(300);
 			}
-		});	
+		});
 	}
 
 
@@ -485,7 +485,7 @@
 
 
 	// ------------------------------- AOS Animation
-    if ($("[data-aos]").length) { 
+    if ($("[data-aos]").length) {
         AOS.init({
         duration: 1000,
         mirror: true
@@ -503,7 +503,7 @@
 	        	var progressValue = Self.data('value');
 
 	        	Self.find('.progress-bar').animate({
-	          	width:progressValue+'%'           
+	          	width:progressValue+'%'
 	        	}, 100);
 
 	        	Self.find('span.value').countTo({
@@ -520,12 +520,12 @@
 	//Sortable Masonary with Filters
 	function enableMasonry() {
 		if($('.sortable-masonry').length){
-	
+
 			var winDow = $(window);
 			// Needed variables
 			var $container=$('.sortable-masonry .items-container');
 			var $filter=$('.filter-btns');
-	
+
 			$container.isotope({
 				filter:'*',
 				 masonry: {
@@ -536,14 +536,14 @@
 					easing:'linear'
 				}
 			});
-			
-	
-			// Isotope Filter 
+
+
+			// Isotope Filter
 			$filter.find('li').on('click', function(){
 				var selector = $(this).attr('data-filter');
-	
+
 				try {
-					$container.isotope({ 
+					$container.isotope({
 						filter	: selector,
 						animationOptions: {
 							duration: 500,
@@ -552,16 +552,16 @@
 						}
 					});
 				} catch(err) {
-	
+
 				}
 				return false;
 			});
-	
-	
+
+
 			winDow.on('resize', function(){
 				var selector = $filter.find('li.active').attr('data-filter');
 
-				$container.isotope({ 
+				$container.isotope({
 					filter	: selector,
 					animationOptions: {
 						duration: 500,
@@ -570,10 +570,10 @@
 					}
 				});
 			});
-	
-	
+
+
 			var filterItemA	= $('.filter-btns li');
-	
+
 			filterItemA.on('click', function(){
 				var $this = $(this);
 				if ( !$this.hasClass('active')) {
@@ -583,11 +583,11 @@
 			});
 		}
 	}
-	
+
 	enableMasonry();
 
 
-	// Select menu 
+	// Select menu
 	function selectDropdown() {
 	    if ($(".selectmenu").length) {
 	        $(".selectmenu").selectmenu();
@@ -611,8 +611,8 @@
 			$( "input.property-amount" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
 			}
 		});
-		
-		$( "input.property-amount" ).val( $( ".price-range-slider" ).slider( "values", 0 ) + " - $" + $( ".price-range-slider" ).slider( "values", 1 ) );	
+
+		$( "input.property-amount" ).val( $( ".price-range-slider" ).slider( "values", 0 ) + " - $" + $( ".price-range-slider" ).slider( "values", 1 ) );
 	}
 
 
@@ -677,13 +677,13 @@
 				        }
 				    },
 				})
-				
+
 		.on('click', '.owl-item', function () {
 			$sync1.trigger('to.owl.carousel', [$(this).index(), duration, true]);
 		})
 		.on('changed.owl.carousel', function (e) {
 			if (!flag) {
-				flag = true;		
+				flag = true;
 				$sync1.trigger('to.owl.carousel', [e.item.index, duration, true]);
 				flag = false;
 			}
@@ -760,13 +760,13 @@
 				        }
 				    },
 				})
-				
+
 		.on('click', '.owl-item', function () {
 			$sync3.trigger('to.owl.carousel', [$(this).index(), duration, true]);
 		})
 		.on('changed.owl.carousel', function (e) {
 			if (!flag) {
-				flag = true;		
+				flag = true;
 				$sync3.trigger('to.owl.carousel', [e.item.index, duration, true]);
 				flag = false;
 			}
@@ -807,22 +807,22 @@
 	/* ==========================================================================
    When document is Scrollig, do
    ========================================================================== */
-	
+
 	$(window).on('scroll', function() {
 		headerStyle();
 	});
 
-	
-	
+
+
 	/* ==========================================================================
    When document is loaded, do
    ========================================================================== */
-	
+
 	$(window).on('load', function() {
 		handlePreloader();
 		enableMasonry();
 	});
 
-	
+
 
 })(window.jQuery);

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DataService } from '../data.service';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-product',
@@ -13,9 +13,10 @@ export class ProductComponent implements OnInit {
   constructor(private route: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit(): void {
-    const productId = +(this.route.snapshot.paramMap.get('id')!);
+    const currentProductId = +(this.route.snapshot.paramMap.get('id')!);
+    console.log('This is my current product ID' + currentProductId)
 
-    this.dataService.getProduct(productId).subscribe(response => {
+    this.dataService.getProduct(currentProductId).subscribe(response => {
       this.product = response;
       console.log(this.product)
     })

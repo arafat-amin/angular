@@ -1,8 +1,8 @@
 <div class="container py-5">
   <div *ngIf="product">
     <h1 class="text-danger">{{ product.title }}</h1>
-    <div class="product__img" *ngFor="let image of product.images">
-      <figure>
+    <div class="product__img" *ngFor="let image of product.images; let i = index">
+      <figure *ngIf="i === 0">
         <img [src]="image" alt="{{ product.title }}" class="product-detail-image" />
       </figure>
     </div>

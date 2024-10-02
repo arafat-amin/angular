@@ -1,4 +1,4 @@
- 
+
 /* Css For Acto */
 
 /************ TABLE OF CONTENTS ***************
@@ -88,7 +88,7 @@
 
 
 
-/*** 
+/***
 
 ====================================================================
   Reset
@@ -103,7 +103,7 @@
 }
 
 
-/*** 
+/***
 
 ====================================================================
   Global Settings
@@ -187,7 +187,7 @@ input,button,select,textarea{
 ul,li{
   list-style:none;
   padding:0px;
-  margin:0px; 
+  margin:0px;
 }
 
 input{
@@ -336,7 +336,7 @@ img {
 }
 
 .preloader{
-  position: fixed; 
+  position: fixed;
   left:0px;
   top:0px;
   height:100%;
@@ -424,7 +424,7 @@ img {
   background: #fd571d;
 }
 
-/*** 
+/***
 
 ====================================================================
                         Home-Page-One
@@ -721,7 +721,7 @@ img {
 }
 
 .main-menu .navbar-collapse{
-  padding:0px;  
+  padding:0px;
 }
 
 .main-menu .navigation > li{
@@ -790,7 +790,7 @@ img {
 }
 
 .main-menu .navigation > li > ul > li:last-child{
-  border-bottom:none; 
+  border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > a{
@@ -877,7 +877,7 @@ img {
 }
 
 .main-menu .navigation > li > ul > li > ul > li:last-child{
-  border-bottom:none; 
+  border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > ul > li > a{
@@ -1254,7 +1254,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell > .fly
 body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyout_search > .flyout-search-title h4 {
   letter-spacing: 0;
   opacity: 1;
-} 
+}
 
 #hamburger-menu {
   width: 100%;
@@ -3242,7 +3242,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Home-Page-Two
@@ -4641,7 +4641,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Home-Page-Three
@@ -4732,7 +4732,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   color: #fff;
 }
 
-.main-header.style-three .main-menu .navigation > li.current > a, 
+.main-header.style-three .main-menu .navigation > li.current > a,
 .main-header.style-three .main-menu .navigation > li:hover > a,
 .main-header.style-three .header-bottom .info-box .search-box .header-flyout-searchbar i:hover{
   color: #ff443e;
@@ -5773,13 +5773,13 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   padding-bottom: 80px;
 }
 
-.team-style-two.home-3 .owl-nav .owl-prev, 
+.team-style-two.home-3 .owl-nav .owl-prev,
 .team-style-two.home-3 .owl-nav .owl-next{
   border-color: #ffedec;
   color: #ff443e;
 }
 
-.team-style-two.home-3 .owl-nav .owl-prev:hover, 
+.team-style-two.home-3 .owl-nav .owl-prev:hover,
 .team-style-two.home-3 .owl-nav .owl-next:hover{
   color: #fff;
   background: #ff443e;
@@ -6174,7 +6174,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Home-Page-Four
@@ -7370,7 +7370,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   top: 26px;
 }
 
-.testimonial-style-three .owl-nav .owl-prev, 
+.testimonial-style-three .owl-nav .owl-prev,
 .testimonial-style-three .owl-nav .owl-next {
   position: absolute;
   top: 0px;
@@ -7396,7 +7396,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   right: 0px;
 }
 
-.testimonial-style-three .owl-nav .owl-prev:hover, 
+.testimonial-style-three .owl-nav .owl-prev:hover,
 .testimonial-style-three .owl-nav .owl-next:hover{
   background: #fe2a37;
   border-color: #fe2a37;
@@ -7824,7 +7824,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Home-Page-Five
@@ -8544,7 +8544,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   margin-top: 95px;
 }
 
-.project-style-five .top-content .tab-btn-box .product-tab-btns li.active-btn, 
+.project-style-five .top-content .tab-btn-box .product-tab-btns li.active-btn,
 .project-style-five .top-content .tab-btn-box .product-tab-btns li:hover {
   background: #4ed63c;
 }
@@ -9232,7 +9232,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Home-Page-Six
@@ -9251,8 +9251,8 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 }
 
 .main-header.style-six .header-top .header-info li a,
-.main-header.style-six .header-top .header-nav li, 
-.main-header.style-six .header-top .header-nav li a, 
+.main-header.style-six .header-top .header-nav li,
+.main-header.style-six .header-top .header-nav li a,
 .main-header.style-six .header-top .header-nav .language a:hover,
 .main-header.style-six .header-top .header-nav li.phone i{
   color: #5d5d66;
@@ -9685,12 +9685,12 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   transition: all 600ms ease;
 }
 
-.service-block-four:hover .inner-box .left-layer:before, 
+.service-block-four:hover .inner-box .left-layer:before,
 .service-block-four:hover .inner-box .left-layer:after {
   height: 100%;
 }
 
-.service-block-four:hover .inner-box .right-layer:before, 
+.service-block-four:hover .inner-box .right-layer:before,
 .service-block-four:hover .inner-box .right-layer:after {
   height: 100%;
 }
@@ -10353,7 +10353,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   cursor: pointer;
 }
 
-.testimonial-style-five .owl-theme .owl-dots .owl-dot.active span, 
+.testimonial-style-five .owl-theme .owl-dots .owl-dot.active span,
 .testimonial-style-five .owl-theme .owl-dots .owl-dot span:hover {
   width: 17px;
   height: 17px;
@@ -10509,7 +10509,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Home-Page-Seven
@@ -10548,7 +10548,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   top: 0px;
 }
 
-.main-header.style-seven .main-menu .navigation > li.current > a, 
+.main-header.style-seven .main-menu .navigation > li.current > a,
 .main-header.style-seven .main-menu .navigation > li:hover > a{
   color: #ff5e85;
 }
@@ -10763,7 +10763,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   -o-transition:all .4s ease-in .8s;
   transition:all .4s ease-in .8s;
   cursor:url(../images/icons/cross-out.png),
-  pointer; 
+  pointer;
   z-index: 999999;
 }
 
@@ -10900,7 +10900,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 .sidebar-info-contents .content-inner .logo img{
   display:inline-block;
-  max-width:100%; 
+  max-width:100%;
 }
 
 .sidebar-info-contents .content-inner .content-box{
@@ -11859,7 +11859,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   cursor: pointer;
 }
 
-.testimonial-style-six .owl-theme .owl-dots .owl-dot.active span, 
+.testimonial-style-six .owl-theme .owl-dots .owl-dot.active span,
 .testimonial-style-six .owl-theme .owl-dots .owl-dot span:hover {
   width: 17px;
   height: 17px;
@@ -12087,7 +12087,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Home-Page-Eight
@@ -12171,7 +12171,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   color: #7951f8;
 }
 
-.main-header.style-eight .main-menu .navigation > li.current > a, 
+.main-header.style-eight .main-menu .navigation > li.current > a,
 .main-header.style-eight .main-menu .navigation > li:hover > a{
   color: #7951f8;
 }
@@ -12263,7 +12263,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   padding: 80px 0px;
 }
 
-.fabrics-section.home-8 .single-item-carousel .owl-nav .owl-prev:hover, 
+.fabrics-section.home-8 .single-item-carousel .owl-nav .owl-prev:hover,
 .fabrics-section.home-8 .single-item-carousel .owl-nav .owl-next:hover{
   color: #7951f8;
 }
@@ -12973,7 +12973,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   cursor: pointer;
 }
 
-.testimonial-style-seven .owl-theme .owl-dots .owl-dot.active span, 
+.testimonial-style-seven .owl-theme .owl-dots .owl-dot.active span,
 .testimonial-style-seven .owl-theme .owl-dots .owl-dot span:hover {
   width: 17px;
   height: 17px;
@@ -13137,7 +13137,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         About-Page
@@ -13546,7 +13546,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   background: #fd571d;
 }
 
-.testimonial-style-five.about-page .owl-theme .owl-dots .owl-dot.active span, 
+.testimonial-style-five.about-page .owl-theme .owl-dots .owl-dot.active span,
 .testimonial-style-five.about-page .owl-theme .owl-dots .owl-dot span:hover{
   background: transparent;
   border-color: #fd571d;
@@ -13864,7 +13864,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Team-Page
@@ -13977,7 +13977,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Service-Page
@@ -15050,7 +15050,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 }
 
 
-/*** 
+/***
 
 ====================================================================
                         Shop-Page
@@ -15759,13 +15759,13 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   height:4px;
   border:none;
   margin-bottom:22px;
-  background:#eef2f5; 
+  background:#eef2f5;
 }
 
 .range-slider .ui-slider .ui-slider-range{
   top:0px;
   height:4px;
-  background:#fd571d; 
+  background:#fd571d;
 }
 
 .range-slider .ui-state-default,
@@ -15775,7 +15775,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   height:14px;
   background:#ffffff;
   border-radius:50%;
-  cursor:pointer; 
+  cursor:pointer;
   margin-left: 0px;
   box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.20);
   border: none;
@@ -16327,7 +16327,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         History-Page
@@ -16701,7 +16701,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Partner-Page
@@ -16889,7 +16889,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 }
 
 
-/*** 
+/***
 
 ====================================================================
                         Testimonial-Page
@@ -16930,7 +16930,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   background: #fd571d;
 }
 
-.testimonial-style-three.testimonial-page .owl-nav .owl-prev:hover, 
+.testimonial-style-three.testimonial-page .owl-nav .owl-prev:hover,
 .testimonial-style-three.testimonial-page .owl-nav .owl-next:hover{
   background: #fd571d;
   border-color: #fd571d;
@@ -16978,7 +16978,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   background: #fd571d;
 }
 
-.testimonial-style-five.testimonial-page .owl-theme .owl-dots .owl-dot.active span, 
+.testimonial-style-five.testimonial-page .owl-theme .owl-dots .owl-dot.active span,
 .testimonial-style-five.testimonial-page .owl-theme .owl-dots .owl-dot span:hover{
   border-color: #fd571d;
   background: transparent;
@@ -17005,7 +17005,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   background: #fd571d;
 }
 
-.testimonial-style-six.testimonial-page .owl-theme .owl-dots .owl-dot.active span, 
+.testimonial-style-six.testimonial-page .owl-theme .owl-dots .owl-dot.active span,
 .testimonial-style-six.testimonial-page .owl-theme .owl-dots .owl-dot span:hover{
   border-color: #fd571d;
   background: transparent;
@@ -17013,7 +17013,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Gallery-Page
@@ -17066,7 +17066,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Comingsoon-Page
@@ -17358,7 +17358,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 }
 
 
-/*** 
+/***
 
 ====================================================================
                         Case-Page
@@ -17530,7 +17530,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   color: #fd571d;
 }
 
-.project-style-four.case-page-2 .top-content .filters .filter-btns li.active, 
+.project-style-four.case-page-2 .top-content .filters .filter-btns li.active,
 .project-style-four.case-page-2 .top-content .filters .filter-btns li:hover{
   background: #fd571d;
 }
@@ -17636,7 +17636,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
   padding-left: 0px;
 }
 
-.project-style-four.case-page-4 .top-content .filters .filter-btns li.active, 
+.project-style-four.case-page-4 .top-content .filters .filter-btns li.active,
 .project-style-four.case-page-4 .top-content .filters .filter-btns li:hover{
   background: #fd571d;
   color: #fff;
@@ -18339,7 +18339,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Blog-Page
@@ -19291,7 +19291,7 @@ body.flyout-searchbar-active .wraper_flyout_search > .table > .table-cell .flyou
 }
 
 
-/*** 
+/***
 
 ====================================================================
                         Contact-Page

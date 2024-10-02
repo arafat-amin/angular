@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from './data.service';
+import { DataService } from '../data.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ProductsComponent implements OnInit {
   data: any[] = [];
+  displayCount = 9;
 
   constructor(private dataService: DataService, private router: Router) { }
 
@@ -22,5 +23,9 @@ export class ProductsComponent implements OnInit {
   productDetails(productId: number) {
     this.router.navigate(['/product', productId]);
     console.log(productId)
+  }
+
+  loadMore() {
+    this.displayCount += 6; // Increase by 6 each time
   }
 }

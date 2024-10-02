@@ -12,6 +12,7 @@ import { CounterComponent } from './counter/counter.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
+import { FeaturedProductsComponent } from './shared/featured-products/featured-products.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductComponent } from './products/product/product.component';
     FooterComponent,
     CounterComponent,
     ProductsComponent,
-    ProductComponent
+    ProductComponent,
+    FeaturedProductsComponent
   ],
   imports: [
     BrowserModule,
