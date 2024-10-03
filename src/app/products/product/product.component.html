@@ -1,9 +1,9 @@
-<div class="container py-5">
+<div class="container-fluid py-5">
   <div *ngIf="product">
-    <h1 class="text-danger">{{ product.title }}</h1>
+    <h1>{{ product.title }}</h1>
     <div class="product__img" *ngFor="let image of product.images; let i = index">
       <figure *ngIf="i === 0">
-        <img [src]="image" alt="{{ product.title }}" class="product-detail-image" />
+        <img [src]="image" alt="{{ product.title }}" class="product-detail-image img-fluid w-25" />
       </figure>
     </div>
     <span class="d-block"><strong>Price:</strong> ${{ product.price }} </span>
@@ -13,7 +13,7 @@
 
 
     <div *ngIf="product.reviews">
-      <h2 class="mt-4 text-danger">Reviews</h2>
+      <h2 class="mt-4">Reviews</h2>
       <ul *ngFor="let review of product.reviews">
         <li class="mb-3">
           <span class="d-block"><strong class="ms-2">Name</strong> {{review.reviewerName}}</span>

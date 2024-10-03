@@ -1,7 +1,8 @@
 import { Component, OnInit, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/data.service';
-declare var $: any;
+
+declare var Swiper: any;
 
 @Component({
   selector: 'app-featured-products',
@@ -9,9 +10,10 @@ declare var $: any;
   styleUrls: ['./featured-products.component.css']
 })
 export class FeaturedProductsComponent implements OnInit, AfterViewInit {
+
   data: any[] = [];
   displayCount = 6;
-  carouselInitialized = false;
+  swiper: any;
 
   constructor(
     private dataService: DataService,
@@ -19,39 +21,45 @@ export class FeaturedProductsComponent implements OnInit, AfterViewInit {
     private cdr: ChangeDetectorRef
   ) { }
 
+
   ngOnInit(): void {
     this.dataService.getData().subscribe(response => {
       this.data = response;
-      this.cdr.detectChanges(); // Trigger change detection
-      this.initializeCarousel();
-    })
+      this.cdr.detectChanges();
+      if (this.swiper) {
+        this.swiper.update();
+      }
+    });
   }
 
   ngAfterViewInit() {
-    if (this.data.length > 0 && !this.carouselInitialized) {
-      this.initializeCarousel();
-    }
+    this.initializeSwiper();
   }
 
-  initializeCarousel() {
-    if ($('.three-column-carousel').length) {
-      $('.three-column-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: true,
-        smartSpeed: 3000,
-        autoplay: false,
-        navText: ['<span class="fas fa-arrow-left"></span>', '<span class="fas fa-arrow-right"></span>'],
-        responsive: {
-          0: { items: 1 },
-          480: { items: 1 },
-          600: { items: 2 },
-          800: { items: 2 },
-          1024: { items: 4 }
-        }
-      });
-      this.carouselInitialized = true;
-    }
+  initializeSwiper() {
+    this.swiper = new Swiper(".products-carousel", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      speed: 500,
+      navigation: {
+        nextEl: ".products-carousel-next",
+        prevEl: ".products-carousel-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        991: {
+          slidesPerView: 4,
+        },
+        1500: {
+          slidesPerView: 5,
+        },
+      }
+    });
   }
 
   productDetails(productId: number) {

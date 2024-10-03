@@ -25,16 +25,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/css/owl.css",
-              "src/styles.css"
+              "src/css/vendor.css",
+              "src/style.css"
             ],
             "scripts": [
-              "src/assets/js/jquery.js",
-              "src/assets/js/owl.js",
-              "src/assets/js/aos.js",
-              "src/assets/js/popper.min.js",
-              "src/assets/js/bootstrap.min.js",
-              "src/assets/js/popper.min.js",
+              "src/assets/js/jquery-1.11.0.min.js",
+              "src/assets/js/plugins.js",
               "src/assets/js/script.js"
             ]
           },

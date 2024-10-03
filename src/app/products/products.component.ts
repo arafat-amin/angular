@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ProductsComponent implements OnInit {
   data: any[] = [];
-  displayCount = 9;
+  displayCount = 16;
 
   constructor(private dataService: DataService, private router: Router) { }
 
@@ -26,6 +26,6 @@ export class ProductsComponent implements OnInit {
   }
 
   loadMore() {
-    this.displayCount += 6; // Increase by 6 each time
+    this.displayCount += 8; // Increase by 6 each time
   }
 }
