@@ -15,14 +15,14 @@
             </a>
           </figure>
           <h3>{{product.title}}</h3>
-          <span class="qty">1 Unit</span>
+          <!-- <span class="qty">1 Unit</span> -->
           <span class="rating">
-            <div {{product.rating}}>
-              <svg width="24" height="24" class="text-primary">
+            <ng-container *ngFor="let star of getStars(product.rating)">
+              <svg width="22" height="25" class="text-primary">
                 <use xlink:href="#star-solid"></use>
               </svg>
+            </ng-container>
               {{product.rating}}
-            </div>
           </span>
           <span class="price">${{product.price}}</span>
           <div class="d-flex align-items-center justify-content-between">

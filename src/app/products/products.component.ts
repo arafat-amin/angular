@@ -28,4 +28,8 @@ export class ProductsComponent implements OnInit {
   loadMore() {
     this.displayCount += 8; // Increase by 6 each time
   }
+
+  getStars(rating: number): number[] {
+    return Array(Math.round(rating)).fill(0);
+  }
 }
