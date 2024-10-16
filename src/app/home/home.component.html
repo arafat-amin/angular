@@ -120,9 +120,9 @@
       <div class="col-md-12">
         <div class="category-carousel swiper">
           <div class="swiper-wrapper">
-            <a *ngFor="let product of data | slice: 0 : displayCount ; let i = index" href="index.html"
+            <a *ngFor="let product of data | slice: 0: categoriesCount ; let i = index" href="index.html"
               class="nav-link category-item swiper-slide">
-              <img src="images/icon-vegetables-broccoli.png" alt="Category Thumbnail">
+              <img [src]="product.images[0]" class="img-fluid" alt="Category Thumbnail"> 
               <h3 class="category-title">{{product.category}}</h3>
             </a>
           </div>

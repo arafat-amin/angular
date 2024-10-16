@@ -484,9 +484,15 @@ h1,h2,h3,h4,h5,h6 {
   box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
   text-align: center;
-  padding: 60px 20px;
+  padding: 20px 20px;
   margin: 20px 0;
   transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+}
+.category-carousel .category-item img {
+  width: 150px;
+  height: 150px;
+  object-position: center;
+  object-fit: contain;
 }
 .category-carousel .category-item:hover {
   transform: translate3d(0,-10px,0);

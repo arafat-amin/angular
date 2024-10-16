@@ -9,6 +9,7 @@ import { DataService } from '../data.service';
 })
 export class HomeComponent implements OnInit {
 data: any[] = [];
+categoriesCount = 12;
 displayCount = 6;
 
 constructor (private route: Router, private dataService: DataService, private router: Router) {}
