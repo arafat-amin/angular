@@ -10,7 +10,10 @@ import { DataService } from '../../data.service';
 export class ProductComponent implements OnInit {
   product: any;
 
-  constructor(private route: ActivatedRoute, private dataService: DataService) { }
+  constructor(
+    private route: ActivatedRoute,
+     private dataService: DataService
+    ) { }
 
   ngOnInit(): void {
     const currentProductId = +(this.route.snapshot.paramMap.get('id')!);
